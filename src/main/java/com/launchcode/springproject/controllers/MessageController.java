@@ -12,13 +12,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class MessageController {
-    // display list of messages, method handler
-
 
     @Autowired
     private MessageService messageService;
 
-    @GetMapping("/list")  //index
+    @GetMapping("/list")  //list of users
     public String viewListMessages(Model model) {
         model.addAttribute("listMessages", messageService.getAllMessages());
         return "list";
