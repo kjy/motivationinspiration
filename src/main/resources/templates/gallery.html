@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<!--<html lang="en" xmlns:th="https://www.thymeleaf.org/">-->
-<html lang="en">
-<link href="./css/carousel.css" rel="stylesheet"/>
-<script src="./js/carousel.js"></script>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<link href="./css/gallery.css" rel="stylesheet"/>
+<script src="./js/gallery.js"></script>
 <head>
     <title>Gallery</title>
 </head>
-<body>
+<body style="background-color:#B953E8">
+<br>
+<h1>Gallery of Motivational & Inspirational Messages</h1>
 <br>
 <br>
 <br>
+
 <!-- Slideshow container -->
 <div class="slideshow-container">
     <!-- Full-width images with number and caption text -->
@@ -35,13 +37,13 @@
     <div class="mySlides fade">
         <div class="numbertext">4 / 5</div>
         <img src="./images/hawaii_4.jpeg" style="width:100%">
-        <div class="text">Just another day in paradise!</div>
+        <div class="text">Stay positive. Good things will happen.</div>
     </div>
 
     <div class="mySlides fade">
         <div class="numbertext">5 / 5</div>
         <img src="./images/hawaii_5.jpeg" style="width:100%">
-        <div class="text">Stay positive. Good things will happen. </div>
+        <div class="text">Difficult roads lead to beautiful destinations.</div>
     </div>
 
     <!-- Next and previous buttons -->
@@ -57,6 +59,11 @@
     <span class="dot" onclick="currentSlide(3)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
 </div>
-
+<br>
+<br>
+<br>
+<p style="text-align: center">
+    <a th:href = "@{/temp}"> Go to Weather</a>
+</p>
 </body>
 </html>

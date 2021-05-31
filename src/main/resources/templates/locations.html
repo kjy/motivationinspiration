@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8"></meta>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet"
+          type="text/css"></link>
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet"
+          type="text/css"></link>
+    <link href="css/style.css" rel="stylesheet" type="text/css"></link>
+    <title>Weather App</title>
+</head>
+<body>
+<h1>Pick a Location</h1>
+<br>
+<div>
+    <form method="get" th:action="@{/weather}" th:object="${locations}">
+        <select class="select-css" name="selectedLocation">
+            <option value="0">   select a location   </option>
+            <br>
+            <option th:each="location : ${locations}" th:text="${location.text}" th:value="${location.text}"></option>
+        </select>
+        <br>
+        <p><input class="btn" type="submit" value="submit"/></p>
+    </form>
+</div>
+</body>
+</html>

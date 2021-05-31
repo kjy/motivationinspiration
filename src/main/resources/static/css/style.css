@@ -1,0 +1,90 @@
+/**********************************************
+*** GENERAL
+**********************************************/
+
+* {
+    margin: 100;
+    padding: 100;
+    box-sizing: border-box;
+    text-align:center;
+}
+
+h1 {
+    text-align:center;
+}
+
+/*https://www.istockphoto.com/photo/sandy-beach-gm499651198-80350161?irgwc=1&cid=IS&utm_medium=affiliate_SP&utm_source=FreeImages&clickid=VnFT56Q3UxyLR8x05-R4sULoUkBzMUzZIXUzzE0&utm_term=sand&utm_campaign=&utm_content=270496&irpid=246195*/
+body {
+    color: #555;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+    position: relative;
+    height: 100vh;
+    font-weight: 400;
+    background: url("../images/background.jpeg") no-repeat #0e4f79;
+    background-size: cover;
+    text-align:center;
+}
+
+.right { float: right; }
+.red { color: #FF5049 !important; }
+.red-focus:focus { border: 1px solid #FF5049 !important; }
+
+/**********************************************
+*** TOP PART
+**********************************************/
+
+
+.page_head {
+    position: absolute;
+    width: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.page_title {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+/**********************************************
+*** Tables
+**********************************************/
+.container {
+    width: 1000px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+table {
+    margin:auto;
+    width:50%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-color:GhostWhite;
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+/**********************************************
+*** form
+**********************************************/
+
+input[type=text], select {
+  width: 15%;
+  padding: 12px 20px;
+  margin: 8px 2px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align:center;
+}

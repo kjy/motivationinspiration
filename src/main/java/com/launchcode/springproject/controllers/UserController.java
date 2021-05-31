@@ -1,7 +1,5 @@
 package com.launchcode.springproject.controllers;
 
-import java.util.List;
-
 import com.launchcode.springproject.model.User;
 import com.launchcode.springproject.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,8 +9,10 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import java.util.List;
+
 @Controller
-public class AppController {
+public class UserController {
 
     @Autowired
     private UserRepository userRepository;
