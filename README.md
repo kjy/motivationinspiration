@@ -40,14 +40,23 @@ Database: MySQL
 
 ### Routes from Localhost:8080
 /register
+
 /process_register
+
 /login
+
 /users
+
 /list
+
 /showNewMessageForm
+
 /ShowFormForUpdate/{id}
+
 /deleteMessage/{id}
+
 /gallery   
+
 /temp      
 
 
