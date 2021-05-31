@@ -55,10 +55,8 @@ public class OpenWeatherServiceClient {
                 .accept(MediaType.APPLICATION_JSON).build();
         ResponseEntity<T> exchange = this.restTemplate
                 .exchange(request, responseType);
-        return exchange.getBody();
+        return exchange.getBody(); // converts JSON to Java property objects
     }
 
 }
 
-// http://localhost:8080/
-//http://localhost:8080/weather?selectedLocation=Los%20Angeles%2C+California
