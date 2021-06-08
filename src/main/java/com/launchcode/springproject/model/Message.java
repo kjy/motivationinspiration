@@ -10,13 +10,10 @@ public class Message {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    @Column(name = "messages_id")
     private Long id;
 
-//    @Column(name="email")
     private String email;
 
-//    @Column(name = "message text")
     private String text;
 
     public Message() { };
